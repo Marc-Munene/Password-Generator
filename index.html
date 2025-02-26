@@ -20,11 +20,27 @@
             type="text"
             id="password"
             class="flex border p-3 rounded w-full focus:outline-none"
+            readonly
           />
 
           <button class="bg-gray-300 px-4 py-2 hover:bg-blue-50 cursor-pointer">
             Copy
           </button>
+        </div>
+
+        <!-- password settings -->
+        <div>
+          <label for="password-settings" class="">Password Settings</label>
+          <ul class="options">
+            <li class="option">
+              <input type="checkbox" id="LowerCase" checked />
+              <label for="LowerCase">LoweCase (a-z)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="UpperCase" />
+              <label for="UpperCase">UpperCase (A-Z)</label>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
