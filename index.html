@@ -9,8 +9,23 @@
   </head>
   <body>
     <div class="container flex justify-center items-center min-h-screen">
-      <div>
-        <h1>PASSWORD GENERATOR</h1>
+      <div
+        class="flex flex-col justify-center items-center border rounded shadow p-5 m-5 w-3xl"
+      >
+        <h1 class="text-3xl font-bold">PASSWORD GENERATOR</h1>
+
+        <!-- Input + Button wrapper -->
+        <div class="flex input-box mt-5 w-96">
+          <input
+            type="text"
+            id="password"
+            class="flex border p-3 rounded w-full focus:outline-none"
+          />
+
+          <button class="bg-gray-300 px-4 py-2 hover:bg-blue-50 cursor-pointer">
+            Copy
+          </button>
+        </div>
       </div>
     </div>
   </body>
