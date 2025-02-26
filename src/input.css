@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme{
+    --color-wine: #5B2333 ;
+    --color-whitesmoke: #F7F4F3 
+}
