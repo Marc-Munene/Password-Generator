@@ -29,9 +29,11 @@
         </div>
 
         <!-- password settings -->
-        <div>
-          <label for="password-settings" class="">Password Settings</label>
-          <ul class="options">
+        <div class="flex flex-col items-center gap-2 mt-4 w-full">
+          <label for="password-settings" class="flex text-2xl font-semibold"
+            >Password Settings</label
+          >
+          <ul class="options grid grid-cols-2 gap-1.5 w-2/3">
             <li class="option">
               <input type="checkbox" id="LowerCase" checked />
               <label for="LowerCase">LoweCase (a-z)</label>
@@ -40,9 +42,33 @@
               <input type="checkbox" id="UpperCase" />
               <label for="UpperCase">UpperCase (A-Z)</label>
             </li>
+            <li class="option">
+              <input type="checkbox" id="Numbers" />
+              <label for="Numbers">Numbers (0-9)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="Exclude Duplicate" />
+              <label for="Exclude Duplicate">Exclude Duplicate </label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="Symbols" />
+              <label for="Symbols">Symbols (!-$+) </label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="Include Spaces" />
+              <label for="Include Spaces">Include Spaces </label>
+            </li>
           </ul>
+        </div>
+
+        <div class="mt-5 w-96">
+          <button class="border p-3 w-full rounded font-extrabold">
+            GENERATE PASSWORD
+          </button>
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
